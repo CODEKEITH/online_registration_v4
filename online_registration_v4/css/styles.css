@@ -175,6 +175,46 @@ fieldset {
 
 fieldset legend {
 	padding-top: 30px;
-
-	
 }
+
+
+@media screen and (min-width: 768px) {
+
+.subheading,
+.borders,
+form {
+	width: 700px;
+	margin: 0 auto;
+}
+
+form .name-top {
+	display: inline-block;
+	width: 170px;
+	margin: 0 auto;
+}
+
+form .input-top {
+	display: inline-block;
+	width: 500px;
+}
+
+.borders {
+	width: 675px;
+}
+
+button {
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
