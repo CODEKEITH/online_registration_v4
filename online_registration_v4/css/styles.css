@@ -13,7 +13,7 @@ header {
 	max-width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	background: #384047;
+	background: #379592;
 	color: white;
 	font-size: .66666em;
 	height: 70px;
@@ -22,7 +22,7 @@ header {
 h1 {
 	margin-top: 0;
 	padding-top: 20px;
-	
+	font-size: 2.0em;	
 }
 
 div p{
@@ -61,11 +61,8 @@ div p{
 	padding-top: 25px;
 }
 
-	
-}
-
 form {
-	max-width: 400px;
+	max-width: 700px;
 	margin: 10px auto;
 	padding: 10px 20px;
 	background: white;
@@ -111,9 +108,13 @@ input[type="email"]::-webkit-input-placeholder {
     text-align: right;
 }
 
+input[type="tel"]::-webkit-input-placeholder {
+    text-align: right;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
-	margin: 0 4px 8px 0;
+	margin: 8px 4px 8px 0px;
 	color: white;
 }
 
@@ -133,8 +134,7 @@ input[type="radio"]:checked + label  {
 }
 
 :target {
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
 
 button {
@@ -151,6 +151,10 @@ button {
   display: block;
 }
 
+button:hover {
+	background-color: #379592;
+}
+
 legend {
 	font-size: 1.4em;
 	margin-bottom: 10px;
@@ -163,8 +167,7 @@ legend {
 
 .title {
 	margin-top: 15px;
-	margin-bottom: 10px;
-	
+	margin-bottom: 10px;	
 }
 
 fieldset {
@@ -177,14 +180,54 @@ fieldset legend {
 	padding-top: 30px;
 }
 
+.footer {
+	text-align: center;
+	color: #65c6c3;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	font-style: italic;
+}
+
+#topics {
+	resize: none;
+	height: 100px;
+	-webkit-transition: height 1s; /* Safari */
+    transition: height 1s;
+}
+
+#topics:focus {
+	height: 150px;
+}
+
+.topics {
+	padding-top: 30px;
+}
+
+.border-div {
+	height: 0px;
+	border-bottom: 3px solid #384047;
+	width: 95%;
+	margin: 0 auto;	
+}
+
+
+
 
 @media screen and (min-width: 768px) {
 
 .subheading,
 .borders,
-form {
+form .fieldset1,
+form .fieldset2 {
 	width: 700px;
 	margin: 0 auto;
+}
+
+form {
+	max-width: 700px;
+	margin: 0px auto;
+	padding: 0px 0px;
+	background: white;
 }
 
 form .name-top {
@@ -203,10 +246,24 @@ form .input-top {
 }
 
 button {
-	width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
+	width: 678px;
 }
+
+.border-div {
+	height: 0px;
+	border-bottom: 3px solid #384047;
+	width: 675px;
+	margin: 0 auto;	
+}
+
+.fieldset1 {
+	padding-bottom: 45px;
+}
+
+.container2 {
+	padding-top: 15px;
+}
+
 
 }
 
