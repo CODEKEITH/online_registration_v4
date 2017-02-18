@@ -34,6 +34,8 @@ div p{
 	padding-bottom: 40px;
 }
 
+        /***************double border***************/
+
 .borders {
 	position: relative;
 	border-bottom: 2px solid #384047;
@@ -78,6 +80,8 @@ label.inline {
 	display: inline;
 }
 
+        /***************input style***************/
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -100,6 +104,8 @@ select {
 	cursor: pointer;
 }
 
+            /***************placeholder alignment***************/
+
 input[type="text"]::-webkit-input-placeholder {
     text-align: right;
 }
@@ -112,19 +118,16 @@ input[type="tel"]::-webkit-input-placeholder {
     text-align: right;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-	margin: 8px 4px 8px 0px;
-	color: white;
-}
-
-input[type="radio"]:active {
-		background: blue;	
-}
-
 input:focus,
 textarea:focus {
 	box-shadow:  inset 1.5px 1px 1.5px 1px rgba(0,0,0,0.2);
+}
+
+        /***************radio and checkbox style***************/
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
 }
 
 input[type="checkbox"]:checked + label,
@@ -133,9 +136,43 @@ input[type="radio"]:checked + label  {
 	font-size: 1.1em;	
 }
 
-:target {
-	font-weight: bold;	
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+  background-color: #e8eeef;
+  border-radius: 5px;
+  border: 1px solid #379592;
+  content: "\00a0";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 16px 0 0;
+  padding: 0;
+  vertical-align: top;
 }
+input[type="checkbox"]:checked + label:before {
+  color: #fff;
+  content: "\2713";
+  text-align: center;
+  font-size: .6em;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+  background-color: #379592;
+}
+
+input[type="radio"] + label:before {
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked + label:before {
+  color: #fff;
+  content: "\2022";
+  text-align: center;
+  font-size: .52em;
+}
+
+        /***************button style***************/
 
 button {
   padding: 19px 39px 18px 39px;
@@ -188,6 +225,14 @@ fieldset legend {
 	font-style: italic;
 }
 
+.footer:before {
+  color: #65c6c3;
+  content: "\00A9";
+  text-align: center;
+  margin-right: 5px;
+  font-size: 1.2em
+}
+
 #topics {
 	resize: none;
 	height: 100px;
@@ -210,10 +255,9 @@ fieldset legend {
 	margin: 0 auto;	
 }
 
+        /***************media queries***************/
 
-
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {        
 
 .subheading,
 .borders,

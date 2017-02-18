@@ -28,10 +28,10 @@
 			  <legend>Contact Information</legend>
 			  
 			  <label class="name-top" for="name">Full Name</label>
-			  <input class="input-top" type="text" id="name" name="user_name" placeholder="Required">
+			  <input class="input-top" type="text" id="name" name="user_name" required placeholder="Required">
 			  
 			  <label  class="name-top" for="mail">Email Address</label>
-			  <input  class="input-top" type="email" id="mail" name="user_email" placeholder="Required">
+			  <input  class="input-top" type="email" id="mail" name="user_email" required placeholder="Required">
 			  
 			  <label  class="name-top" for="tel">Phone Number</label>
 			  <input  class="input-top" type="tel" id="tel" name="user_tel" placeholder="xxx-xxx-xxxx">
@@ -118,7 +118,7 @@
 				 <input type="radio" id="html" value="html" name="format"><label class="inline format" for="html">HTML</label><br>
 				 <input type="radio" id="plain-text" value="plain-text" name="format"><label class="inline light" for="plain-text">Plain Text</label>
 				  
-				 <label class="topics">Other topics you'd like to hear about</label>
+				 <label class="topics" for="topics">Other topics you'd like to hear about</label>
 				 <textarea id="topics" name="user_topics"></textarea>
 			</fieldset>
 		</div>
